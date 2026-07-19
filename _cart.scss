@@ -1,0 +1,188 @@
+$grey-text : #888888;
+$black-link : #000;
+@keyframes cartBtnFromUp{
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
+
+.body{
+    font-family: 'Montserrat';
+}
+.top-cart{
+    height: 400px;
+    background-image: url(img/img-cart/cart_header.jpg);
+    background-position:center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.heading__cart{
+    color: #fff;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 70px;
+    margin-top: 127px;
+}
+
+.cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+
+        &__content{
+            grid-column: span 8;
+        }
+
+        &__name-box{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 14px
+        }
+
+        &__item{
+            padding-top: 25px;
+            padding-bottom: 32px;
+            border-top: 0.5px solid #CACDD8;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            
+        }
+
+        &__left{
+            display: flex;
+            gap: 32px;
+        }
+        &__left-img{
+            width: 173px;
+            height: 173px;
+        }
+
+        &__info{
+            width: 276px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        &__weight{
+            font-size: 24px;
+            font-weight: 500;
+        }
+        &__cost{
+            font-size: 16px;
+            font-weight: 500;
+        }
+        
+        &__grey-text{
+            color: $grey-text;
+        }
+
+        &__link-black{
+            color:$black-link ;
+        }
+        &__input{
+            width: 72px;
+            height: 52px;
+            background-color: #F7F6F6;
+            border-radius: 6px;
+            text-align: center;
+            border: none;
+        }
+
+        &__form {
+            background: #f7f6f6;
+            border-radius: 20px;
+            height: 556px;
+            grid-column: span 4;
+            padding-left: 30px;
+            padding-right: 30px;
+
+            
+        }
+        &__titel{
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 100%;
+            margin-top: 42px;
+        }
+        &__parameters{
+            font-weight: 400;
+            font-size: 14px;
+            margin-top: 40px;
+            display: block;
+            border: none;
+            outline: none;
+            background: #f7f6f6;
+            border-bottom: 0.5px solid #CACDD8;
+            width: 100%;
+
+        }
+        
+        &__verdict{
+            display: flex;
+            margin-top: 68px;
+            justify-content: center;
+        }
+
+        &__itog{
+            font-size: 24px;
+            font-weight: 400;
+            padding-right: 10px;
+        }
+        &__itog_pruce{
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        &__btn{
+            border: 1px solid #000000;
+            width: 200px;
+            height: 37px;
+            border-radius: 50px;
+            margin-right: 7px;
+            background-color: #fff;
+            margin-top: 18px;
+            transition: 0.5s;
+        }
+        &__btn:hover{
+            background: #000;
+            color: #fff;
+        }
+
+        &__btn-form{
+            width:100%;
+            height: 40px;
+            border: 1px solid #040404;
+            border-radius: 20px;
+            margin-top: 18px;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: 400;
+            background-color: #f7f6f6;
+            transition: .5s;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: cartBtnFromUp 1s ease-in forwards;
+        }
+        &__btn-form:hover{
+            background: #000;
+            color: #fff;
+        }
+}
+
+.dop__Product{
+    font-size: 16px;
+    color:$black-link;
+    font-weight: 400;
+    margin-top: 32px;
+    margin-bottom: 68px;
+}

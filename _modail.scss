@@ -1,0 +1,342 @@
+@media(max-width:1024px)
+{
+    .center{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .header{
+        &__img{
+            width: 198px;
+            height: 44px;
+        }
+        &__nav{
+            display: flex;
+            gap: 32px;
+        }
+        &__link{
+            margin-left: 0;
+        }
+    }
+
+    .for{
+        gap: 30px;
+        &__item{
+            height: 265px;
+        }
+        &__item_big{
+            height: 268px;
+        }
+    }
+    
+    .special{
+        gap: 30px;
+        justify-content: center;
+        .special__display{
+        column-gap: 30px;
+        row-gap: 40px;
+    }
+    }
+    
+    .catalog{
+        &__title{
+            margin-top: 64px;
+            margin-bottom: 42px;
+        } 
+        &__title-zag{
+        font-size: 48px;
+        margin-top: 64px;
+        margin-bottom: 32px;
+        font-weight: 600;
+    }
+        &__dispey{
+            column-gap: 30px;
+            row-gap: 40px;
+        }
+        &__link{
+            margin-top: 40px;
+            margin-bottom: 68px;
+        }
+        &__dispey{
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 30px;
+        }
+        &__title_cataloga{
+            margin-top: 127px;
+        }
+    }
+    .catalogTop{
+        display: flex;
+        justify-content: center;
+    }
+
+    .GET{
+        width: 541px;
+        right: 25px;
+    }
+
+    .footer{
+        &__img{
+            display: none;
+        }
+        &__contacts{
+            margin-left: 98px;
+        }
+    }
+    .form{
+        margin-left: 148px;
+    }
+
+
+
+    .cart{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(378px, 1fr));
+    
+        &__content{
+            width: 786px;
+        }
+
+        &__form{
+            width: 378px;
+        }
+        &__input{
+            border: none;
+        }
+    }
+}
+
+
+@media (max-width: 767px)
+{
+ .center{
+    padding-left: 16px;
+    padding-right: 16px;
+ }
+ .input{
+    display: none;
+ }
+
+.product{
+    &__title{
+        font-size: 18px;
+    }
+    &__price{
+        font-size: 18px;
+        gap: 20px;
+    }
+}
+
+.special__display{
+    gap: 32px;
+}
+
+ .header{
+
+    border: none;
+    &__nav{
+    display: none;
+    }
+    &__img{
+        width: 99px;
+        height: 22px;
+        margin-top: 50px;
+    }
+    &__nav-mob{
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        margin-top: 51px;
+    }
+    
+ }
+ .top-cart{
+        height: 400px;
+    }
+
+    .cart{
+       &__form{
+        padding-right: 30px;
+       }
+        
+        &__parameters{
+            width: 283px;
+        }
+
+        &__btn-form{
+            width: 283px;
+        }
+        &__poz{
+            display: flex;
+        }
+        &__name-box{
+            display: none;
+        }
+    }
+
+ .hero{
+    padding-top: 0;
+    display: grid;
+    justify-items: center;
+    margin-bottom: 32px;
+
+    &__title{
+        font-size: 48px;
+        text-align: center;
+        line-height: 100%;
+        margin-top: 46px;
+    }
+    &__text{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    &__link{
+        font-weight: 400;
+        font-size: 14px;
+    }
+ }
+ .nav{
+    &__title{
+        font-size: 24px;
+    }
+ }
+
+ .for{
+    grid-template-columns: repeat(4, 1fr);
+    
+    &__item{
+        font-size: 28px;
+        height: 375px;
+    }
+    &__item_big{
+        grid-column:span 4;
+        height: 243px;
+    }
+ }
+ 
+ .special{
+    margin-top: 32px;
+    row-gap: 32px;
+    &__title{
+        font-size: 24px;
+        margin-top: 0;
+        margin-bottom: 32px;
+    }
+    &__display{
+        grid-column: 0;
+    }
+ }
+
+.heading{
+    display: flex;
+    justify-content: center;
+    &__cart{
+        font-size: 48px;
+        margin-top: 100px;
+    }
+}
+
+ .catalog{
+    &__title{
+        font-size: 48px;
+        margin-top: 104px;
+    }
+    &__title-zag{
+        font-size: 24px;
+        margin-top: 37px;
+        margin-bottom: 32px;
+        font-weight: 600;
+    }
+    &__link{
+    margin-bottom: 36px;
+    margin-top: 40px;
+    }
+    &__product{
+        width: 343px;
+    }
+    &__dispey{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+    &__product-title{
+        font-size: 18px;
+    }
+    &__product-description{
+        font-size: 14px;
+    }
+    &__product-price{
+        font-size: 18px;
+    }
+ }
+
+ .sorting{
+    margin-top: 40px;
+    &__content{
+        flex-direction: column;
+    }
+ }
+
+ .select{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    margin-top: 22px;
+ }
+
+ .GET{
+    width: 286px;
+    height: 910px;
+    top: 150px;
+    right: 72px;
+    
+    &__filter{
+        width: 190px;
+        height: 830px;
+    }
+    &__content_wrapper{
+        display: flex;
+        gap: 32px;
+        max-height: 830px;
+        max-width: 190px;
+
+    }&__fieldset{
+      margin-top: 0;  
+    }
+    &__btn{
+        margin-left: 0;
+        margin-top: 36px;
+    }
+ }
+ 
+ .footer{
+    justify-content: space-around;
+    &__img{
+        display: none;
+    }
+    &__contacts{
+        margin-left: 0;
+    }
+ }
+ .form{
+    margin-left: 0;
+ }
+
+
+ .cart{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(378px, 1fr));
+
+        &__left-img{
+            display: none;
+        }
+
+        &__content{
+            width: 343px;
+        }
+
+        &__form{
+            width: 343px;
+        }
+    }
+}

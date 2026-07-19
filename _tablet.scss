@@ -1,0 +1,25 @@
+@media(max-width:1024px)
+{
+    .center{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .header{
+        &__img{
+            width: 198px;
+            height: 44px;
+        }
+    }
+    .for{
+        gap: 30px;
+        &__item{
+            height: 265px;
+        }
+        &__item_big{
+            height: 268px;
+        }
+    }
+    .special__display{
+        column-gap: 30px;
+    }
+}
