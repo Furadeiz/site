@@ -1,7 +1,6 @@
 const openBtn = document.getElementById("openFilterPanel");
 const getForm = document.getElementById("filterForm");
 
-getForm.style.display = "none";
 
 openBtn.addEventListener("click", () => {
 
