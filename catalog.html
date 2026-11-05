@@ -65,18 +65,17 @@
                 <a href="#catalog__product" class="sorting__title">Каталог товара</a>
             </div>
             <div class="select">
-                <select class="select__filter select__img">
-                    <option value="Фильтрация">Фильтрация</option>
-                </select>
+                <button type="button" class="select__filter select__img" id="openFilterPanel" onclick="openBtn">
+                </button>
 
                 <select class="select__filter select__img select__img_list">
                     <option value="По популярному">По популярному</option>
                     <option value="Сначала новые">Сначала новые</option>
                     <option value="Сначала старые">Сначала старые</option>
                 </select>
-                <form accept="#" class="GET">
+                <form accept="#" class="GET" >
                     <div>
-                        <div class="GET__filter">
+                        <div class="GET__filter" id="filterPanel">
                             <div class="GET__content GET__content_wrapper">
                                 <div>
                                     <fieldset class=" GET__fieldset radio">
@@ -230,7 +229,7 @@
                                 </div>
                             </div>
 
-                            <button class="GET__btn">Примягить</button>
+                            <button class="GET__btn">Примянить</button>
 
 
                         </div>
@@ -535,6 +534,7 @@
         </form>
 
     </footer>
+    <script src="catalog_JS.js"></script>
 </body>
 
 </html>
