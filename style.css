@@ -166,10 +166,6 @@
   display: flex;
 }
 
-.select {
-  position: relative;
-}
-
 .select__filter {
   font-family: "Montserrat";
   -webkit-appearance: none;
