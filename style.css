@@ -165,7 +165,10 @@
 .sorting__link {
   display: flex;
 }
-
+.select{
+    display: flex;
+    gap: 10px;
+}
 .select__filter {
   font-family: "Montserrat";
   -webkit-appearance: none;
